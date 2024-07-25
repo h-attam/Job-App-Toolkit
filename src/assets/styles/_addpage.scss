@@ -1,0 +1,34 @@
+.add-page {
+  min-height: 90vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 70vw;
+  max-width: 700px;
+  box-shadow: 0 0 55px rgb(226, 68, 160);
+  padding: 25px;
+  form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+  div input,
+  div select {
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 5px;
+    font-family: "poppins";
+  }
+}
+
+.filter-sec {
+  @extend .container;
+  margin: 30px auto 80px;
+}
